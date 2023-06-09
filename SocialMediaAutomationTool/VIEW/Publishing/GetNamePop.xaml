@@ -1,0 +1,18 @@
+﻿<Window x:Class="SocialMediaAutomationTool.VIEW.Publishing.GetNamePop"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SocialMediaAutomationTool.VIEW.Publishing"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Title="Campaign Name" Height="200" Width="400">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1"/>
+        <Button Content="x" VerticalAlignment="Top" Height="21" HorizontalAlignment="Right" Width="28" Background="#07908e" Click="bClose"/>
+        <TextBox x:Name="getname" TextWrapping="Wrap"  Margin="80,91,80,91"/>
+        <Button Content="OK" Background="#07908e" HorizontalAlignment="Center" Margin="0,141,0,0" VerticalAlignment="Top" Width="78" Height="27" Click="bOK"/>
+        <Label Content="Enter a Name for your Campaign!" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="186"/>
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="SocialMediaAutomationTool.VIEW.Publishing.campaigntype"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SocialMediaAutomationTool.VIEW.Publishing"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Title="test screen" Height="400" Width="600">
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="Black"/>
+        <Button Content="x" VerticalAlignment="Top" Height="21" HorizontalAlignment="Right" Width="28" Background="#07908e" Click="close_Click"/>
+        <Button Content="Add Standard Campaign" Background="#07908e" HorizontalAlignment="Left" Margin="44,0,0,0" VerticalAlignment="Center" Height="40" Width="157" Click="bStandard"/>
+        <Button Content="Add Volume Campaign" Background="#07908e" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="156"/>
+        <Button Content="Add Scheduled Campaign" Background="#07908e" HorizontalAlignment="Left" VerticalAlignment="Center" Height="40" Width="156" Margin="400,0,0,0" Click="bScheduled"/>
+
+    </Grid>
+</Window>

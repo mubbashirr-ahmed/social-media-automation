@@ -1,0 +1,26 @@
+﻿<Window x:Class="SocialMediaAutomationTool.VIEW.Publishing.campaign.scrape.scrapingPosts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SocialMediaAutomationTool.VIEW.Publishing.campaign.scrape"
+        mc:Ignorable="d"
+         WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Title="Scraping Posts" Height="400" Width="600">
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="Black"/>
+        <Label Content="No. of posts: " Margin="396,238,0,128" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Width="106"/>
+        <Button Content="x" VerticalAlignment="Top" Height="21" HorizontalAlignment="Right" Width="28" Background="#07908e" Click="close"/>
+        <DataGrid Name="userdata" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="5,90,5,0" ColumnWidth = "130"  IsReadOnly="True" Height="121" VerticalAlignment="Top" SelectionChanged="DataGrid_SelectionChanged"/>
+        <Label Name="lUname" Content="---" FontSize="15" HorizontalAlignment="Left" Margin="153,238,0,0" VerticalAlignment="Top" Height="34" Width="243"/>
+        <Label Name="lPass"  Content="---" FontSize="15" HorizontalAlignment="Left" Margin="153,272,0,0" VerticalAlignment="Top" Height="34" Width="243"/>
+        <Label Content="Select Account for Scrapping" FontSize="16" HorizontalAlignment="Left" Margin="183,0,0,0" VerticalAlignment="Top" Height="34" Width="223"/>
+        <Button Content="Start Scrapper" BorderThickness="0.5" Background="#07908e" HorizontalAlignment="Left" Margin="300,313,0,0" VerticalAlignment="Top" Height="31" Width="106" Click="bStartScrape"/>
+        <Label  Content="username/email:" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="25,238,0,0" VerticalAlignment="Top" Height="34" Width="128"/>
+        <Label  Content="password:" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="25,272,0,0" VerticalAlignment="Top" Height="34" Width="128"/>
+        <TextBox x:Name="num_posts" HorizontalAlignment="Left" FontSize="15" Margin="502,244,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="40" Height="22"/>
+
+    </Grid>
+</Window>

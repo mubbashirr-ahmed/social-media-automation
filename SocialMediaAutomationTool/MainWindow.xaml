@@ -1,0 +1,112 @@
+﻿<Window x:Class="SocialMediaAutomationTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SocialMediaAutomationTool"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="700"
+        Width="1200"
+        MinHeight="700"
+        MinWidth="1200"
+        WindowStyle="None"
+        ResizeMode="CanResizeWithGrip"
+        AllowsTransparency="True"
+        
+        WindowStartupLocation="CenterScreen" SizeToContent="Manual">
+
+	
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="210"/>
+            <ColumnDefinition Width="643*"/>
+            <ColumnDefinition Width="97"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="146*"/>
+            <RowDefinition Height="95"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.RowSpan="2" Background="#edf0f7" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1" Background="White" Margin="10,0,10,20">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"   >
+                    <Frame x:Name="frame" Margin="10,10,10,20" NavigationUIVisibility="Hidden" />
+                </ScrollViewer>
+            </Grid>
+            <Grid Grid.Row="0">
+                <Frame x:Name="frame_button" Margin="10,0,0,0" NavigationUIVisibility="Hidden" />
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1" Background="#07908e" MouseLeftButtonDown="Grid_MouseLeftButtonDown" MouseRightButtonDown="Grid_MouseRightButtonDown" >
+            <Grid.ContextMenu>
+                <ContextMenu Name="headermenu">
+                    <MenuItem Header="Minimize" Click="Button_minimize"/>
+                    <MenuItem Header="Maximize" Click="Button_maximize"/>
+                    <MenuItem Header="Close" Click="Button_Close"/>
+                </ContextMenu> 
+            </Grid.ContextMenu>
+            <TextBlock x:Name= "page_name" TextWrapping="Wrap" Text="Dashboard" HorizontalAlignment="Left" FontSize="20" Margin="85,10,0,2" Width="109"/>
+            <Label Content="version 1.2.0" Margin="216,10,0,0" HorizontalAlignment="Left" Foreground="#e1e3e1" Width="87" RenderTransformOrigin="0.895,0.556"/>
+            <Button Background="Transparent" Width="35" BorderThickness="0" HorizontalAlignment="Left" Margin="45,0,0,0" Click="Button_Click">
+                <StackPanel Width="31" Height="47">
+                    <Image Source="Assets/right.png" Stretch="Fill" Width="33" Height="25" Margin="0,12,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Background="Transparent" Width="40" BorderThickness="0" HorizontalAlignment="Left">
+                <StackPanel Width="41" Height="47">
+                    <Image Source="Assets/left.png" Stretch="Fill" Width="33" Height="25" Margin="0,12,0,0" />
+                </StackPanel>
+            </Button>
+            <ComboBox Background="Transparent" Text="mubbaahir41@gmail.com" HorizontalAlignment="Right" Width="143"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="0" Background="#07908e" MouseLeftButtonDown="Grid_MouseLeftButtonDown" MouseRightButtonDown="Grid_MouseRightButtonDown">
+            <TextBlock Text="Automation" TextAlignment="Center" TextWrapping="Wrap" Padding="0,12,0,0" FontWeight="Bold" FontSize="20" Foreground="White"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="2" Background="#07908e">
+            <Button Content="x" Margin="63,0,-1,0" Foreground="White" Background="Transparent" FontWeight="Bold" BorderThickness="0" RenderTransformOrigin="2.59,0.533" Click="Button_Close" />
+            <Button Content="□" HorizontalAlignment="Left" Width="35" Foreground="White" Background="Transparent" FontWeight="Bold" BorderThickness="0" FontSize="20" Click="Button_maximize" Margin="31,0,0,0" />
+            <Button Content="-" HorizontalAlignment="Left" Width="35" Foreground="White" Background="Transparent" FontWeight="Bold" BorderThickness="0" FontSize="20" Click="Button_minimize" />
+        </Grid>
+        <ScrollViewer Grid.RowSpan="2" Grid.Row="1" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
+            <StackPanel Background="#2E333A" HorizontalAlignment="Center" Width="230" Grid.Row="1" Grid.RowSpan="2">
+                <Grid Height="45" Margin="0,20,0,0" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/dashboard.png" Width="24" Height="24" Margin="30,0,0,0"/>
+                        <Button Content="Dashboard" Padding="15,0,0,0" FontWeight="Normal" Width="186" HorizontalContentAlignment="Left" Grid.IsSharedSizeScope="True" BorderBrush="{x:Null}" Background="Transparent" Foreground="White" Click="open_summary" />
+                    </StackPanel>
+                </Grid>
+                <Grid Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/profiles.png" Width="24" Height="24" Margin="30,0,0,0"/>
+                        <Button Content="Social Profiles" Padding="15,0,0,0" FontWeight="Normal" Width="186" HorizontalContentAlignment="Left" Grid.IsSharedSizeScope="True" BorderBrush="{x:Null}" Background="Transparent" Foreground="White" Click="open_profiles" />
+                    </StackPanel>
+                </Grid>
+                <Grid Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/protocols.png" Width="24" Height="24" Margin="30,0,0,0"/>
+                        <Button Content="Proxy Manager" Padding="15,0,0,0" FontWeight="Normal" Width="186" HorizontalContentAlignment="Left" Grid.IsSharedSizeScope="True" BorderBrush="{x:Null}" Background="Transparent" Foreground="White" Click="open_proxymng"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/publish.png" Width="24" Height="24" Margin="30,0,0,0"/>
+                        <Button Content="Publishing" Padding="15,0,0,0" FontWeight="Normal" Width="186" HorizontalContentAlignment="Left" Grid.IsSharedSizeScope="True" BorderBrush="{x:Null}" Background="Transparent" Foreground="White" Click="open_publish"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/mechanical-gears-.png" Width="24" Height="24" Margin="30,0,0,0"/>
+                        <Button Content="Settings" Padding="15,0,0,0" FontWeight="Normal" Width="186" HorizontalContentAlignment="Left" Grid.IsSharedSizeScope="True" BorderBrush="{x:Null}" Background="Transparent"  Foreground="White"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="12" Margin="0,-84,0,0" VerticalAlignment="Top" Width="1"/>
+
+    </Grid>
+</Window>

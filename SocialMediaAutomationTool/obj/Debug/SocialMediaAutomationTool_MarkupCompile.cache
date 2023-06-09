@@ -1,0 +1,20 @@
+﻿SocialMediaAutomationTool
+
+
+winexe
+C#
+.cs
+D:\RTechProjects\ver 1.7\Deliverable\Deliverable\SocialMediaAutomationTool\SocialMediaAutomationTool\SocialMediaAutomationTool\obj\Debug\
+SocialMediaAutomationTool
+none
+false
+DEBUG;TRACE
+D:\RTechProjects\ver 1.7\Deliverable\Deliverable\SocialMediaAutomationTool\SocialMediaAutomationTool\SocialMediaAutomationTool\App.xaml
+42864157036
+5215238345
+561760494465
+141-1657614914
+VIEW\Dashboardcs\contactsupport.xaml;VIEW\Dashboardcs\dashboard_controls.xaml;VIEW\Dashboardcs\notifications.xaml;VIEW\Dashboardcs\summary.xaml;VIEW\Dashboardcs\welcome.xaml;VIEW\Dashboardcs\whatsnew.xaml;MainWindow.xaml;VIEW\proxymanager\proxymanage.xaml;VIEW\proxymanager\proxy_controls.xaml;VIEW\Publishing\camapignControlScheduled.xaml;VIEW\Publishing\campaign\drafts.xaml;VIEW\Publishing\campaign\history.xaml;VIEW\Publishing\campaign\overview.xaml;VIEW\Publishing\campaign\postListPopup.xaml;VIEW\Publishing\campaign\PostLocation.xaml;VIEW\Publishing\campaign\postslist.xaml;VIEW\Publishing\campaign\scrape\addposts.xaml;VIEW\Publishing\campaign\scrape\addsourceD.xaml;VIEW\Publishing\campaign\scrape\MonitorFolder.xaml;VIEW\Publishing\campaign\scrape\rssposts.xaml;VIEW\Publishing\campaign\scrape\scrapeposts.xaml;VIEW\Publishing\campaign\scrape\scrapingPosts.xaml;VIEW\Publishing\campaign\whattopublish.xaml;VIEW\Publishing\campaign\whentopublish.xaml;VIEW\Publishing\campaign\wheretopublish.xaml;VIEW\Publishing\campaign_control.xaml;VIEW\Publishing\GetNamePop.xaml;VIEW\Publishing\Page1.xaml;VIEW\Publishing\publish.xaml;VIEW\Publishing\publish_control.xaml;VIEW\Publishing\campaigntype.xaml;VIEW\Socialprofiles\fbaddprofiles\fbfriends.xaml;VIEW\Socialprofiles\fbaddprofiles\fbgroups.xaml;VIEW\Socialprofiles\fbaddprofiles\fbignore.xaml;VIEW\Socialprofiles\fbaddprofiles\fbsettings.xaml;VIEW\Socialprofiles\fbaddprofiles\fb_control.xaml;VIEW\Socialprofiles\fbaddprofiles\fbnotes.xaml;VIEW\Socialprofiles\popUP.xaml;VIEW\Socialprofiles\selectPlatform.xaml;VIEW\Socialprofiles\sprofiles.xaml;VIEW\Socialprofiles\sprofiles_controls.xaml;VIEW\Socialprofiles\Update.xaml;
+
+True
+
